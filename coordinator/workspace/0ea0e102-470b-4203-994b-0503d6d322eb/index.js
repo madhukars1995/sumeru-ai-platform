@@ -1,0 +1,2 @@
+console.log("Hello from generated project!");
+console.log("Prompt: hi");

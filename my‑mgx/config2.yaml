@@ -1,0 +1,9 @@
+llm:
+  base_url: "http://litellm:4000/v1"   # the proxy we will set up in a moment
+  model: "gemini-2.5-pro"
+  api_type: "gemini"
+  stream: true
+  temperature: 0.7
+  max_tokens: 4000
+  timeout: 60
+  retry_on_failure: true 

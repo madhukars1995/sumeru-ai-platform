@@ -1,0 +1,17 @@
+model_list:
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: gemini/gemini-2.5-pro
+      api_key: ${GEMINI_API_KEY}  # Use environment variable
+      rpm: 3000       # requests per minute
+      tpm: 90000      # tokens per minute
+      max_retries: 3  # retry failed requests
+      timeout: 60     # timeout in seconds
+      temperature: 0.7
+      max_tokens: 4000
+
+router_settings:
+  routing_strategy: usage-based-routing   # always pick the least busy key
+  default_model: gemini-2.5-pro
+  enable_observability: true
+  enable_logging: true 

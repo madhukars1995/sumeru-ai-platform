@@ -1,0 +1,9 @@
+model_list:
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: gemini/gemini-2.5-pro
+      api_key: AIzaSyDzBKCrqflYlfYqp-rHxz1byIUtswL0x-Q
+      rpm: 3000       # requests per minute
+      tpm: 90000      # tokens per minute
+router_settings:
+  routing_strategy: usage-based-routing   # always pick the least busy key 

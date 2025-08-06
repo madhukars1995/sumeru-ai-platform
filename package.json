@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "dev:full": "./dev.sh",
+    "dev:backend": "cd coordinator && python3 -m uvicorn server:app --host 127.0.0.1 --port 8001 --reload --reload-dir .",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind:build": "./tailwindcss -i ./src/index.css -o ./src/tailwind.output.css --watch",
+    "start": "./dev.sh"
+  }
+} 

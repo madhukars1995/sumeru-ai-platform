@@ -1,0 +1,9 @@
+{
+  "name": "generated-project",
+  "version": "1.0.0",
+  "description": "Generated project from prompt",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
