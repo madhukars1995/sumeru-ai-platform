@@ -150,6 +150,9 @@ export const ModelSelector: React.FC = () => {
   const getInternalModelName = (provider: string, displayName: string): string => {
     // Map display names back to internal names
     const modelMapping: Record<string, Record<string, string>> = {
+      'gpt_oss': {
+        'GPT-OSS-20B': 'gpt-oss-20b'
+      },
       'gemini': {
         'Gemini 1.5 Flash': 'gemini-1.5-flash',
         'Gemini 1.5 Pro': 'gemini-1.5-pro',
@@ -186,6 +189,7 @@ export const ModelSelector: React.FC = () => {
   const getProviderIcon = (provider: string) => {
     switch (provider) {
       case 'auto': return '🤖';
+      case 'gpt_oss': return '🚀';
       case 'gemini': return '🔍';
       case 'openrouter': return '🌐';
       case 'groq': return '⚡';
